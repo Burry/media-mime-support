@@ -5,7 +5,7 @@ function addMimeChecks(table,mime,desc) {
 	var mediasource_result;
 	video_result = video.canPlayType(mime);
 	try { 
-		mediasource_result = MediaSource.isTypeSupported(mime); 
+		mediasource_result = ManagedMediaSource.isTypeSupported(mime); 
 	} catch (e) { 
 		mediasource_result = e.message; 
 	}
@@ -22,7 +22,7 @@ function createTableHeader(div) {
 	content += "<th>Description</th>";
 	content += "<th>MIME</th>";
 	content += "<th><code>HTMLMediaElement.canPlayType</code></th>";
-	content += "<th><code>MediaSource.isTypeSupported</code></th>";
+	content += "<th><code>ManagedMediaSource.isTypeSupported</code></th>";
 	content += "</tr>";
 	t.innerHTML = content;
 	return t;

@@ -39,5 +39,6 @@ var AUDIO_CODECS = [
 	{ codec: "mp4a.6B", 	description: "MPEG-1 Part 3"},
 	{ codec: ".mp3", 	description: "MPEG-1/2 Part 3 - QuickTime File Format"},
 	{ codec: "mp3", 	description: "MPEG-1/2 Part 3 - QuickTime File Format"},
+	{ codec: "webm", 	description: "Web Media"},
 ];
 
